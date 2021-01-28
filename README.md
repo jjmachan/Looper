@@ -44,9 +44,17 @@ First of all lets get the app running. Git clone this repo and cd into the direc
 
 Then start a virtual camera which we will be using as our modified feed to the webcam. 
 
-`sudo modprobe v4l2loopback devices=1 video_nr=1 card_label="HD WebCam" exclusive_caps=1`
+```
+sudo modprobe v4l2loopback devices=1 video_nr=1 card_label="HD WebCam" exclusive_caps=1
+```
 
-Run to see all the Cameras. This displays all the cameras that are attached to your system. Note down them. 
+Run `ls -l /dev | grep video` to see all the Cameras. This displays all the cameras that are attached to your system. Note down them. 
 
-`ls -l /dev | grep video`
+Now start the app by running `python looper.py`. 
+
+### 2. Setup
+
+You can run `python looper.py setup` to run the setup util which will configure the default directory to save recorded videos, default webcam etc. 
+
+After that simple run `python looper.py` to start with the app. Move over to the confrencing app your using and you'll see a second webcam (called HD WebCame by default). Use that as your primary webcam. Then press **r** to start recording and once you have sufficient time of video press **esc** to go back to live mode. Then press **q** to exit setup mode and your ready for buisness.
 

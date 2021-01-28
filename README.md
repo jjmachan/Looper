@@ -58,3 +58,8 @@ You can run `python looper.py setup` to run the setup util which will configure 
 
 After that simple run `python looper.py` to start with the app. Move over to the confrencing app your using and you'll see a second webcam (called HD WebCame by default). Use that as your primary webcam. Then press **r** to start recording and once you have sufficient time of video press **esc** to go back to live mode. Then press **q** to exit setup mode and your ready for buisness.
 
+All in all this GIF somes this up
+
+<p align="center">
+  <img width="650" height="500" src="static/banner.gif">
+</p>
